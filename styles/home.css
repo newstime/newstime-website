@@ -1,0 +1,590 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    src: local("Raleway Thin"), local("Raleway-Thin"), url(/fonts/raleway/Raleway-Thin.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(/fonts/raleway/Raleway-ExtraLight.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Raleway Light"), local("Raleway-Light"), url(/fonts/raleway/Raleway-Light.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Raleway"), url(/fonts/raleway/Raleway-Regular.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: local("Raleway Medium"), local("Raleway-Medium"), url(/fonts/raleway/Raleway-Medium.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(/fonts/raleway/Raleway-SemiBold.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Raleway Bold"), local("Raleway-Bold"), url(/fonts/raleway/Raleway-Bold.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(/fonts/raleway/Raleway-ExtraBold.woff) format("woff")
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: local("Raleway Heavy"), local("Raleway-Heavy"), url(/fonts/raleway/Raleway-Heavy.woff) format("woff")
+}
+@font-face {
+    font-family: 'Megrim';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Megrim"), url(/fonts/megrim/Megrim.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+}
+@font-face {
+    font-family: 'Lovers Quarrel';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lovers Quarrel"), local("LoversQuarrel-Regular"), url(../fonts/lovers_quarrel/LoversQuarrel-Regular.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+}
+
+
+body {
+    margin: 0;
+    font-family: Raleway
+}
+
+h2.subject-headline {
+    font-weight: 500;
+    color: white;
+    text-shadow: #186b83 0 2px 5px;
+    font-size: 32pt;
+    margin-top: 1.2em
+}
+
+
+p.subject-text {
+    font-weight: 200;
+    color: #1c718a;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 16pt;
+    line-height: 1.4em
+}
+
+.main {
+    padding: 1px;
+    height: 800px;
+    background-color: #6b38a1;
+    background-image: url("../images/purple-sky.jpg");
+    background-size: cover;
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    text-align: center
+}
+.main h2 {
+    font-family: 'Megrim', serif;
+    color: #701db6;
+    width: 100%;
+    text-align: center;
+    font-size: 40pt;
+    margin: 2.3in 0 1in;
+    font-weight: 800
+}
+a.magic-button {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 52pt;
+    color: #eee1fa;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: #094156 -1px 1px 3px;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in-out;
+    display: inline-block
+}
+a.magic-button:hover {
+    animation-name: pulse-magic-button;
+    animation-duration: 1s
+}
+@keyframes pulse-magic-button {
+    50% {
+        /*transform: scale(1.1)*/
+        transform: scale(.9)
+    }
+}
+@keyframes scale {
+    0% {
+        background-position: 0 0;
+        background-size: 197%
+    }
+    50% {
+        background-size: 200%
+    }
+    100% {
+        background-position: 0 0;
+        background-size: 197%
+    }
+}
+
+.headline-wrapper {
+    width: 100%;
+    background-color: white
+}
+svg.defs-only {
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden
+}
+
+
+.newspaper-meets-web {
+    position: relative;
+    background-color: #9ae4f9;
+    background-position: center top;
+    background-size: 10%;
+    width: 100%;
+    height: 850px;
+    border-top: 5px solid white;
+    text-align: center
+}
+.newspaper-meets-web .composer-screenshot {
+    width: 800px;
+    position: relative;
+    z-index: 2;
+    margin: -5px auto -10px;
+    display: block;
+    transition: all .2s ease-in-out
+}
+
+.pink-heart {
+    color: #ffcbf0;
+    z-index: 0
+}
+.heart-outline {
+    position: absolute;
+    z-index: 1;
+    text-shadow: none
+}
+.clouds {
+    position: absolute;
+    left: 30px;
+    top: 561px;
+    opacity: .5
+}
+.arrow-down {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(98, 170, 192, 0.5);
+    display: block;
+    margin: 30px auto;
+    outline: none;
+    position: relative;
+    transition: all .3s ease-in-out;
+    width: 0;
+    height: 0;
+    z-index: 3
+}
+.arrow-down:hover {
+    border-top-color: #62aac0;
+    animation-name: scale-arrow;
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+@keyframes scale-arrow {
+    50% {
+        transform: scale(1.4)
+    }
+}
+
+
+.paper-free {
+    border-top: 5px solid white;
+    width: 100%;
+    height: 850px;
+    text-align: center;
+    background-image: url("/images/javalen.jpg")
+}
+.paper-free .shadow {
+    margin: 250px auto 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0 30px
+}
+.paper-free h2.subject-headline {
+    margin-top: 20px;
+    text-shadow: #072c11 0 2px 5px
+}
+.paper-free p.subject-text {
+    color: white
+}
+.paper-free .arrow-down {
+    border-top: 20px solid rgba(255, 255, 255, 0.5)
+}
+.paper-free .arrow-down:hover {
+    border-top-color: white
+}
+
+.artistic-canvas {
+    border-top: 5px solid white;
+    width: 100%;
+    height: 850px;
+    text-align: center;
+    background-image: url(/images/artistic-canvas.png);
+    background-position: center
+}
+.artistic-canvas .shadow {
+    margin: 250px auto 0;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 10px 0 30px
+}
+.artistic-canvas h2.subject-headline {
+    margin-top: 20px;
+    text-shadow: #072c11 0 2px 5px;
+    color: #eeebdf
+}
+.artistic-canvas p.subject-text {
+    color: white
+}
+.artistic-canvas .arrow-down {
+    border-top: 20px solid rgba(255, 255, 255, 0.5)
+}
+.artistic-canvas .arrow-down:hover {
+    border-top-color: white
+}
+
+.openandfree {
+    background-color: #2b6080;
+    background-image: url("/images/magic-flying-raindeer.png");
+    background-size: cover;
+    border-top: 5px solid white;
+    height: 800px;
+    text-align: center
+}
+.openandfree h2 {
+    font-weight: 500;
+    color: white;
+    text-shadow: #103b55 0 2px 5px;
+    font-size: 32pt;
+    margin-top: 1.7em
+}
+.openandfree p {
+    margin-top: 225px;
+    color: white
+}
+.openandfree .project-home {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: 100;
+    position: relative;
+    top: 25px
+}
+
+.download-install {
+    background-color: #F1D0B9;
+    background-image: url("/images/morning_star.png");
+    height: 800px;
+    border-top: 5px solid white;
+    text-align: center
+}
+.download-install h2 {
+    font-weight: 500;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 0, rgba(0, 0, 0, 0.3) 0 1px, rgba(255, 255, 255, 0.5) 0 -1px, rgba(0, 0, 0, 0.3) 1px 2px;
+    text-shadow: #8d9123 0 2px 3px;
+    font-size: 32pt;
+    margin-top: 4em
+}
+.download-install a.download {
+    color: #5257B1;
+    border: 1px solid #5257B1;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 58px;
+    border-radius: 4px;
+    margin-top: 50px;
+    display: inline-block
+}
+
+.contact {
+  color: #444;
+
+}
+.contact a {
+  margin-top: 20px;
+  display: inline-block;
+  color: #5257B1;
+}
+
+@media (min-width: 501px) {
+/* -- Desktop Specific -- */
+
+[slide] {
+  overflow: hidden;
+  min-width: 1000px;
+}
+
+.main {
+    padding: 1px;
+    height: 800px;
+    background-color: #6b38a1;
+    background-image: url("../images/purple-sky.jpg");
+    animation-name: scale;
+    animation-duration: 20s;
+    animation-fill-mode: both;
+    text-align: center
+}
+.main h2 {
+    font-family: 'Megrim', serif;
+    color: #701db6;
+    width: 100%;
+    text-align: center;
+    font-size: 40pt;
+    margin: 2.3in 0 1in;
+    font-weight: 800
+}
+.newstime-twirl {
+    width: 755px;
+    position: relative;
+    display: block;
+    top: -99px;
+    left: -12px;
+    margin: 0 auto -275px
+}
+a.magic-button {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 52pt;
+    color: #eee1fa;
+    font-weight: 100;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    text-shadow: #094156 -1px 1px 3px;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in-out;
+    display: inline-block
+}
+a.magic-button:hover {
+    animation-name: pulse-magic-button;
+    animation-duration: 1s
+}
+@keyframes pulse-magic-button {
+    50% {
+        transform: scale(1.1)
+    }
+}
+svg.logo {
+    fill: white;
+    margin: 2in auto -1.5in;
+    display: block
+}
+.the-newspaper-of-tomorrow {
+    margin: 250px auto 50px;
+    width: 782px;
+    display: block;
+    padding: 15px 0 10px;
+    border: 1px solid white;
+}
+@keyframes scale {
+    0% {
+        background-position: 0 0;
+        background-size: 197%
+    }
+    50% {
+        background-size: 200%
+    }
+    100% {
+        background-position: 0 0;
+        background-size: 197%
+    }
+}
+
+.openandfree p {
+  color: white
+  margin-top: 225px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+/* -- Mobile Specific -- */
+
+[slide] {
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.main {
+  display: block;
+  height: 650px;
+}
+
+h2.subject-headline {
+    font-weight: 500;
+    color: white;
+    text-shadow: #186b83 0 2px 5px;
+    font-size: 24pt;
+    margin-top: 1.2em
+}
+p.subject-text {
+    font-weight: 200;
+    color: #1c718a;
+    width: 500px;
+    margin: 0 auto;
+    font-size: 16pt;
+    line-height: 1.4em
+}
+
+.newstime-twirl {
+  width: 400px;
+  position: relative;
+  left: -4px;
+  top: -2px;
+}
+
+svg.logo {
+  fill: white;
+  margin: 1in auto -1.67in;
+  display: block;
+  width: 190px;
+}
+
+.the-newspaper-of-tomorrow {
+  width: 350px;
+  position: relative;
+  top: 3px;
+}
+
+.headline-wrapper {
+  margin: 60px 0 0;
+}
+
+a.magic-button {
+  transform: scale(.7);
+  margin: 50px auto;
+}
+
+.newspaper-meets-web {
+  height: 650px;
+}
+.newspaper-meets-web .composer-screenshot {
+  width: 360px;
+  margin: 20px auto;
+}
+
+.newspaper-meets-web h2.subject-headline {
+  margin-top: 70px;
+  font-size: 22pt;
+}
+
+h2.subject-headline {
+  font-size: 18pt;
+}
+p.subject-text {
+  width: 325px;
+  font-size: 12pt;
+}
+
+.clouds {
+  position: absolute;
+  left: -70px;
+  top: 400px;
+  width: 500px;
+  opacity: .5
+}
+
+.paper-free {
+  height: 650px;
+  background-position: center;
+  background-size: 1100px;
+}
+
+.paper-free .shadow {
+    margin: 170px auto 0;
+    height: 160px;
+    padding: 10px 0 30px
+}
+
+.artistic-canvas {
+  height: 650px;
+}
+
+.artistic-canvas .shadow {
+  margin: 170px auto 0;
+  height: 160px;
+  padding: 10px 0 30px
+}
+
+.openandfree {
+  height: 650px;
+  background-position: -170px 0;
+}
+
+.openandfree h2 {
+  font-size: 18pt;
+}
+.openandfree p {
+    margin-top: 277px;
+    color: white
+}
+.openandfree .project-home {
+    color: dimgray;
+    text-decoration: none;
+    font-weight: 100;
+    position: relative;
+    top: 25px
+}
+
+
+.download-install {
+  height: 650px;
+  background-position: -500px;
+}
+
+
+.download-install h2 {
+  font-size: 18pt;
+}
+.download-install a.download {
+    color: #5257B1;
+    border: 1px solid #5257B1;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 10px 58px;
+    border-radius: 4px;
+    margin-top: 100px;
+    display: inline-block
+}
+
+
+}
