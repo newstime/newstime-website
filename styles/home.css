@@ -2,61 +2,61 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 100;
-    src: local("Raleway Thin"), local("Raleway-Thin"), url(/fonts/raleway/Raleway-Thin.woff) format("woff")
+    src: local("Raleway Thin"), local("Raleway-Thin"), url(../fonts/raleway/Raleway-Thin.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 200;
-    src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(/fonts/raleway/Raleway-ExtraLight.woff) format("woff")
+    src: local("Raleway ExtraLight"), local("Raleway-ExtraLight"), url(../fonts/raleway/Raleway-ExtraLight.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 300;
-    src: local("Raleway Light"), local("Raleway-Light"), url(/fonts/raleway/Raleway-Light.woff) format("woff")
+    src: local("Raleway Light"), local("Raleway-Light"), url(../fonts/raleway/Raleway-Light.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
-    src: local("Raleway"), url(/fonts/raleway/Raleway-Regular.woff) format("woff")
+    src: local("Raleway"), url(../fonts/raleway/Raleway-Regular.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
-    src: local("Raleway Medium"), local("Raleway-Medium"), url(/fonts/raleway/Raleway-Medium.woff) format("woff")
+    src: local("Raleway Medium"), local("Raleway-Medium"), url(../fonts/raleway/Raleway-Medium.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 600;
-    src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(/fonts/raleway/Raleway-SemiBold.woff) format("woff")
+    src: local("Raleway SemiBold"), local("Raleway-SemiBold"), url(../fonts/raleway/Raleway-SemiBold.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    src: local("Raleway Bold"), local("Raleway-Bold"), url(/fonts/raleway/Raleway-Bold.woff) format("woff")
+    src: local("Raleway Bold"), local("Raleway-Bold"), url(../fonts/raleway/Raleway-Bold.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
-    src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(/fonts/raleway/Raleway-ExtraBold.woff) format("woff")
+    src: local("Raleway ExtraBold"), local("Raleway-ExtraBold"), url(../fonts/raleway/Raleway-ExtraBold.woff) format("woff")
 }
 @font-face {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 900;
-    src: local("Raleway Heavy"), local("Raleway-Heavy"), url(/fonts/raleway/Raleway-Heavy.woff) format("woff")
+    src: local("Raleway Heavy"), local("Raleway-Heavy"), url(../fonts/raleway/Raleway-Heavy.woff) format("woff")
 }
 @font-face {
     font-family: 'Megrim';
     font-style: normal;
     font-weight: 400;
-    src: local("Megrim"), url(/fonts/megrim/Megrim.woff) format("woff");
+    src: local("Megrim"), url(../fonts/megrim/Megrim.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 @font-face {
@@ -230,7 +230,7 @@ svg.defs-only {
     width: 100%;
     height: 850px;
     text-align: center;
-    background-image: url("/images/javalen.jpg")
+    background-image: url("../images/javalen.jpg")
 }
 .paper-free .shadow {
     margin: 250px auto 0;
@@ -257,7 +257,7 @@ svg.defs-only {
     width: 100%;
     height: 850px;
     text-align: center;
-    background-image: url(/images/artistic-canvas.png);
+    background-image: url(../images/artistic-canvas.png);
     background-position: center
 }
 .artistic-canvas .shadow {
@@ -283,7 +283,7 @@ svg.defs-only {
 
 .openandfree {
     background-color: #2b6080;
-    background-image: url("/images/magic-flying-raindeer.png");
+    background-image: url("../images/magic-flying-raindeer.png");
     background-size: cover;
     border-top: 5px solid white;
     height: 800px;
@@ -310,7 +310,7 @@ svg.defs-only {
 
 .download-install {
     background-color: #F1D0B9;
-    background-image: url("/images/morning_star.png");
+    background-image: url("../images/morning_star.png");
     height: 800px;
     border-top: 5px solid white;
     text-align: center
@@ -373,6 +373,7 @@ svg.defs-only {
 }
 .newstime-twirl {
     width: 755px;
+    height: 325px;
     position: relative;
     display: block;
     top: -99px;
